@@ -5,6 +5,10 @@ import React, { useState } from 'react';
 
 function App() {
   const [searchVal, setSearchVal] = useState('');
+  const [temp, setTemp] = useState('');
+  const [country, setCountry] = useState('');
+  const [date, setDate] = useState('');
+  const [weather, setWeather] = useState('');
 
   const fetchData = () => {
     fetch(`http://api.weatherapi.com/v1/current.json?key=e9efbd0df6294e5c9fb94321233012&q=${searchVal}`)
@@ -13,6 +17,10 @@ function App() {
        
         console.log(data);
         
+        setTemp(data.current.temp_c);
+        setCountry(data.location.country);
+        setDate(data.location.localtime);
+        setWeather(data.current.condition.text);
 
        
       })
@@ -26,14 +34,14 @@ function App() {
           <h4 className='title'>The Weather</h4>
 
           <div className="content">
-            <h4 id='temp'>Temp:</h4>
+            <h4 id='temp'>{temp}</h4>
             <div className="countr">
-              <h4 id='country'>Country:</h4>
-              <h4 id='date'>Date</h4>
+              <h4 id='country'>{country}</h4>
+              <h4 id='date'>{date}</h4>
             </div>
             <div className="img">
               <img src={sunImage} alt="img" id='weather-img' />
-              <h4 id='weather'>Weather:</h4>
+              <h4 id='weather'>{weather}</h4>
             </div>
           </div>
         </div>
