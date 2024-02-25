@@ -1,0 +1,46 @@
+.full{
+    margin: 0;
+    padding: 0;
+}
+
+.l-side{
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/bgg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff; 
+}
+
+.content{
+    margin-top: 70%;
+    display: flex;
+    padding-bottom: 30px;
+}
+.content h4, .content img{
+    margin-left: 50px;
+}
+#temp{
+    font-size: 70px;
+}
+
+#country{
+    font-size: 40px;
+}
+
+#date{
+    font-size: 20px;
+}
+
+#weather{
+    font-size: 20px;
+}
+#weather-img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.r-side{
+    background: #1846c6c0;
+    background-size: cover;
+}
