@@ -54,6 +54,7 @@
   .r-side {
     background-color: #007bff;
     color: #fff;
+    margin-bottom: 5px;
   }
   
   .search {
@@ -95,7 +96,24 @@
   
   .location-info h4,
   .current-info h4 {
-    font-size: 18px;
+    font-size: 23px;
     margin-bottom: 10px;
+    text-align: center;
+    color: #555;
+    font-weight: bold;
   }
-  
+  .location-info,
+  .current-info p{
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  span{
+    font-weight: bold;
+  }
+  .backimg{
+    height: 155px;
+    background: url(./assets/3505609.jpg);
+    border-radius: 10px;
+    background-size: cover;
+  }
