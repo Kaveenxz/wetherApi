@@ -1,46 +1,86 @@
-.full{
-    margin: 0;
-    padding: 0;
-}
 
-.l-side{
-    margin: 0;
-    padding: 0;
-    background-image: url(./assets/bgg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #ffffff; 
-}
-
-.content{
-    margin-top: 70%;
+/* Add this to your App.css or create a new CSS file */
+.container {
     display: flex;
-    padding-bottom: 30px;
-}
-.content h4, .content img{
-    margin-left: 50px;
-}
-#temp{
-    font-size: 70px;
-}
-
-#country{
-    font-size: 40px;
-}
-
-#date{
-    font-size: 20px;
-}
-
-#weather{
-    font-size: 20px;
-}
-#weather-img{
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .l-side {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    color: #333;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  #temp {
+    font-size: 36px;
+    color: #007bff;
+  }
+  
+  .countr {
     margin-top: 10px;
+  }
+  
+  #country,
+  #date {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .img {
+    margin-top: 20px;
+  }
+  
+  #weather-img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  #weather {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .r-side {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search {
+    margin-bottom: 20px;
+  }
+  
+  input[type="search"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .weather-details h4 {
+    font-size: 18px;
     margin-bottom: 10px;
-}
-
-.r-side{
-    background: #1846c6c0;
-    background-size: cover;
-}
+  }
+  
